@@ -19,6 +19,15 @@ class MyApp extends StatelessWidget{
          child: Column(
            mainAxisAlignment: MainAxisAlignment.center,
          children: [
+           CircleAvatar(
+             radius: 50,
+             backgroundColor: Colors.amber,
+             child: Icon(
+               Icons.person,
+               size: 50,
+               color: Colors.white,
+             ),
+           ),
            Text('Franko Fernando',
              style: TextStyle(
                fontSize: 30,
@@ -27,7 +36,13 @@ class MyApp extends StatelessWidget{
                fontFamily: 'Roboto',
                letterSpacing: 4,
              ),
-           )
+           ),
+           Text('Estudiante de Sistemas Informaticos',
+           style: TextStyle(
+             fontSize: 18,
+             color: Colors.amber[800],
+           ),
+           ),
          ],
          ),
        ),
